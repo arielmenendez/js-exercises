@@ -95,5 +95,19 @@ const getPermutations = (arr) => {
 };
 
 const numbers = [1, 2, 3];
-const permutations = getPermutations(numbers);
-console.log(permutations);
+const g = getPermutations(numbers);
+console.log(g);
+
+// Write a function that searches for a string within another string
+
+const searchSubstring = (str, substr) => {
+  const lowerStr = str.toLowerCase();
+  const lowerSubstr = substr.toLowerCase();
+
+  return lowerStr.includes(lowerSubstr);
+};
+
+const str = 'This is my example string!';
+const substr = 'my';
+const h = searchSubstring(str, substr);
+console.log(h);
